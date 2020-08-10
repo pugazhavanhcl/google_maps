@@ -14,7 +14,7 @@
         <color>ffff0000</color>
       </LineStyle>
     </Style>
-    <Style id="redLine">
+    <Style id="blueLine">
       <LineStyle>
         <color>ff0000ff</color>
       </LineStyle>
