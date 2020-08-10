@@ -9,11 +9,17 @@
     <name>Chicago Transit Map</name>
     <description>Chicago Transit Authority train lines</description>
 
-    <Style id="blueLine">
-      <LineStyle>
-        <color>ffff0000</color>
-      </LineStyle>
-    </Style>
+    <Style id="style0">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LAYER</b></td><td>$[Updated Preliminary 75% Civil Design/LAYER]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
     <Style id="blueLine">
       <LineStyle>
         <color>ff0000ff</color>
@@ -51,8 +57,27 @@
     </Style>
 
     <Placemark>
-      <name>Blue Line</name>
-      <styleUrl>#blueLine</styleUrl>
+      <name>CU-ELEC-UG_HD</name>
+			<styleUrl>#style0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff0033</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff0033</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff0033</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+      <ExtendedData>
+				<SchemaData schemaUrl="#S_Updated_Preliminary_75__Civil_Design_S">
+					<SimpleData name="LAYER">CU-ELEC-UG_HD</SimpleData>
+				</SchemaData>
+			</ExtendedData>
       <LineString>
         <altitudeMode>relative</altitudeMode>
         <coordinates>
